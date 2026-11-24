@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
+
+:root {
+    --navy: #142d4e;
+    --blue: #2367a5;
+    --sky: #eaf3fb;
+    --gold: #f2b544;
+    --ink: #203047;
+    --muted: #64748b;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', Arial, sans-serif;
+    color: var(--ink);
+    line-height: 1.65;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#abin_header {
+    min-height: 82px;
+    padding: 14px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 3px 18px #142d4e12;
+}
+
+.abin_brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--navy);
+    font-size: 14px;
+}
+
+.abin_brand small {
+    display: block;
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.abin_logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 14px;
+    background: var(--navy);
+    color: white;
+    display: grid;
+    place-items: center;
+    font-weight: 800;
+}
+
+.abin_nav {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.abin_nav a {
+    font-size: 13px;
+    font-weight: 600;
+    color: #526174;
+}
+
+.abin_nav a:hover,
+.abin_nav a.active {
+    color: var(--blue);
+}
+
+.abin_toggle {
+    display: none;
+    border: 0;
+    background: var(--sky);
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+/* BAGIAN BERANDA */
+
+.abin_hero {
+    padding: 80px 8%;
+    background: linear-gradient(115deg, #f1f7fc, #e4f0fa);
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    align-items: center;
+    gap: 35px;
+    min-height: 490px;
+}
+
+.abin_tag {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--blue);
+}
+
+h1, h2, h3 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--navy);
+    line-height: 1.25;
+}
+
+.abin_hero h1 {
+    font-size: clamp(34px, 5vw, 55px);
+    margin: 15px 0;
+}
+
+.abin_hero h1 em {
+    font-style: normal;
+    color: var(--blue);
+}
+
+.abin_hero_text p {
+    max-width: 520px;
+    color: var(--muted);
+    margin-bottom: 28px;
+}
+
+.abin_button {
+    display: inline-block;
+    background: var(--blue);
+    color: white;
+    border: 0;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font: 700 13px 'DM Sans';
+    cursor: pointer;
+}
+
+.abin_button:hover {
+    background: var(--navy);
+}
+
+.abin_hero_art {
+    height: 300px;
+    border-radius: 30px;
+    background: linear-gradient(140deg, #1b4774, #347bb4);
+    display: grid;
+    place-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.abin_art_circle {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background: #ffffff20;
+    border: 1px solid #ffffff50;
+    display: grid;
+    place-items: center;
+    font-size: 100px;
+}
+
+.abin_art_note {
+    position: absolute;
+    bottom: 22px;
+    color: white;
+    font-size: 13px;
+}
+
+/* BAGIAN KONTEN */
+
+.abin_section {
+    padding: 68px 8%;
+}
+
+.abin_section_head {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 35px;
+}
+
+.abin_section_head h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.abin_section_head p,
+.abin_card p,
+.abin_news p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.abin_stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.abin_stats div {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border: 1px solid #e7edf3;
+    border-radius: 12px;
+}
+
+.abin_stats b {
+    display: block;
+    color: var(--blue);
+    font-size: 30px;
+}
+
+.abin_stats span {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.abin_soft {
+    background: #f6f9fc;
+}
+
+.abin_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.abin_card {
+    background: white;
+    border: 1px solid #e8eef4;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 8px 25px #142d4e08;
+}
+
+.abin_card h3 {
+    font-size: 17px;
+    margin: 12px 0 8px;
+}
+
+.abin_icon {
+    font-size: 28px;
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    background: var(--sky);
+    border-radius: 13px;
+}
+
+/* BAGIAN CTA DAN FOOTER */
+
+.abin_cta {
+    text-align: center;
+    background: var(--navy);
+    padding: 55px 20px;
+    color: #d8e5f2;
+}
+
+.abin_cta h2 {
+    color: white;
+    font-size: 27px;
+}
+
+.abin_cta p {
+    margin-bottom: 25px;
+}
+
+.abin_button_light {
+    background: white;
+    color: var(--navy);
+}
+
+.abin_footer {
+    background: #0d2038;
+    color: #c2d0df;
+    padding: 27px 8%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+
+.abin_footer b {
+    color: white;
+}
+
+/* HALAMAN LAINNYA */
+
+.abin_page_hero {
+    text-align: center;
+    background: var(--sky);
+    padding: 60px 20px;
+}
+
+.abin_page_hero h1 {
+    font-size: 38px;
+    margin: 8px 0;
+}
+
+.abin_page_hero p {
+    color: var(--muted);
+}
+
+.abin_two_col {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.abin_two_col p {
+    color: var(--muted);
+}
+
+.abin_info_panel {
+    background: #f3f8fc;
+    border-radius: 16px;
+    padding: 28px;
+}
+
+.abin_big_icon {
+    font-size: 48px;
+}
+
+.abin_vision {
+    max-width: 850px;
+    margin: 0 auto 55px;
+    padding: 35px;
+    text-align: center;
+    background: var(--navy);
+    border-radius: 18px;
+    color: white;
+}
+
+.abin_vision span {
+    font-size: 11px;
+    color: #b9d9f5;
+    font-weight: 700;
+}
+
+.abin_vision h2 {
+    color: white;
+    font-size: 25px;
+}
+
+.abin_mission_list {
+    max-width: 850px;
+    margin: auto;
+}
+
+.abin_mission_list div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e6edf3;
+}
+
+.abin_mission_list b {
+    color: var(--blue);
+    font-size: 23px;
+}
+
+.abin_mission_list p {
+    margin: 0;
+}
+
+/* TABEL AKADEMIK */
+
+.abin_table_wrap {
+    overflow-x: auto;
+}
+
+.abin_table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.abin_table th,
+.abin_table td {
+    text-align: left;
+    padding: 13px;
+    border-bottom: 1px solid #e5edf4;
+}
+
+.abin_table th {
+    background: var(--navy);
+    color: white;
+}
+
+/* FASILITAS DAN BERITA */
+
+.abin_facility_pic,
+.abin_news_pic {
+    height: 130px;
+    background: var(--sky);
+    display: grid;
+    place-items: center;
+    font-size: 55px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+
+.abin_facility {
+    overflow: hidden;
+}
+
+.abin_news_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.abin_news {
+    border: 1px solid #e8eef4;
+    border-radius: 14px;
+    padding: 18px;
+}
+
+.abin_news small {
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.abin_news h3 {
+    font-size: 18px;
+}
+
+.abin_note {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 25px;
+}
+
+/* FORM KONTAK */
+
+.abin_contact_grid {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.abin_info_panel p {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.abin_map_placeholder {
+    margin-top: 20px;
+    height: 150px;
+    border-radius: 12px;
+    background: #dceaf5;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.abin_form {
+    padding: 28px;
+    border: 1px solid #e5edf4;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px #142d4e08;
+}
+
+.abin_form h2 {
+    margin-top: 0;
+}
+
+.abin_form label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 13px 0 6px;
+}
+
+.abin_form input,
+.abin_form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d7e1ea;
+    border-radius: 8px;
+    font: 14px 'DM Sans';
+    outline: none;
+}
+
+.abin_form input:focus,
+.abin_form textarea:focus {
+    border-color: var(--blue);
+}
+
+.abin_form textarea {
+    resize: vertical;
+}
+
+.abin_form_status {
+    font-size: 13px;
+    color: #16734a;
+}
+
+/* RESPONSIVE MOBILE */
+
+@media(max-width: 900px) {
+    .abin_nav {
+        gap: 12px;
+    }
+
+    .abin_nav a {
+        font-size: 11px;
+    }
+
+    .abin_hero {
+        padding: 60px 6%;
+    }
+
+    .abin_section {
+        padding: 55px 6%;
+    }
+}
+
+@media(max-width: 700px) {
+    #abin_header {
+        padding: 12px 5%;
+        flex-wrap: wrap;
+    }
+
+    .abin_toggle {
+        display: block;
+    }
+
+    .abin_nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 0 5px;
+        gap: 13px;
+    }
+
+    .abin_nav.abin_show {
+        display: flex;
+    }
+
+    .abin_nav a {
+        font-size: 14px;
+    }
+
+    .abin_hero {
+        grid-template-columns: 1fr;
+        padding: 48px 7%;
+    }
+
+    .abin_hero_art {
+        height: 220px;
+    }
+
+    .abin_art_circle {
+        width: 140px;
+        height: 140px;
+        font-size: 75px;
+    }
+
+    .abin_stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .abin_cards,
+    .abin_news_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .abin_two_col,
+    .abin_contact_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .abin_page_hero h1 {
+        font-size: 31px;
+    }
+
+    .abin_vision h2 {
+        font-size: 20px;
+    }
+
+    .abin_footer {
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .abin_section_head h2 {
+        font-size: 25px;
+    }
+}

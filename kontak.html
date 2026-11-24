@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak | SMA HARAPAN BANGSA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="script.js" defer></script>
+
+<header id="abin_header">
+    <a class="abin_brand" href="index.html">
+        <span class="abin_logo">CB</span>
+        <span><b>SMA HARAPAN BANGSA</b><small>Sekolah Unggul, Generasi Tangguh</small></span>
+    </a>
+    <button class="abin_toggle" id="abin_toggle">☰</button>
+    <nav class="abin_nav" id="abin_nav">
+        <a href="index.html">Beranda</a>
+        <a href="profil.html">Profil</a>
+        <a href="visimisi.html">Visi & Misi</a>
+        <a href="akademik.html">Akademik</a>
+        <a href="fasilitas.html">Fasilitas</a>
+        <a href="berita.html">Berita</a>
+        <a class="active" href="kontak.html">Kontak</a>
+    </nav>
+</header>
+
+<main>
+    <section class="abin_page_hero">
+        <span class="abin_tag">HUBUNGI KAMI</span>
+        <h1>Kontak Sekolah</h1>
+        <p>Kirim pertanyaan atau pesan melalui formulir berikut.</p>
+    </section>
+
+    <section class="abin_section abin_contact_grid">
+
+        <div class="abin_info_panel">
+            <h2>Informasi Kontak</h2>
+
+            <p>📍 Jl. Pendidikan No. 10, Tasikmalaya, Jawa Barat</p>
+            <p>☎ (0265) 123456</p>
+            <p>✉ info@smacendekia.sch.id</p>
+            <p>🕘 Senin–Jumat, 07.00–15.00 WIB</p>
+
+            <div class="abin_map_placeholder">
+                📍<br>
+                Lokasi SMA HARAPAN BANGSA
+            </div>
+        </div>
+
+        <form class="abin_form" id="abin_contact_form">
+
+            <h2>Kirim Pesan</h2>
+
+            <label for="abin_nama">Nama Lengkap</label>
+            <input
+                id="abin_nama"
+                name="nama"
+                type="text"
+                placeholder="Masukkan nama"
+                required
+            >
+
+            <label for="abin_email">Email</label>
+            <input
+                id="abin_email"
+                name="email"
+                type="email"
+                placeholder="nama@email.com"
+                required
+            >
+
+            <label for="abin_subjek">Subjek</label>
+            <input
+                id="abin_subjek"
+                name="subjek"
+                type="text"
+                placeholder="Subjek pesan"
+                required
+            >
+
+            <label for="abin_pesan">Pesan</label>
+            <textarea
+                id="abin_pesan"
+                name="pesan"
+                rows="5"
+                placeholder="Tulis pesan Anda..."
+                required
+            ></textarea>
+
+            <button class="abin_button" type="submit">
+                Kirim Pesan
+            </button>
+
+            <p
+                id="abin_form_status"
+                class="abin_form_status"
+                aria-live="polite"
+            ></p>
+
+        </form>
+
+    </section>
+</main>
+
+<footer class="abin_footer">
+    <b>SMA HARAPAN BANGSA</b>
+    <span>Jl. Pendidikan No. 10, Tasikmalaya</span>
+    <span>© 2026 SMA HARAPAN BANGSA.</span>
+</footer>
+
+</body>
+</html>
